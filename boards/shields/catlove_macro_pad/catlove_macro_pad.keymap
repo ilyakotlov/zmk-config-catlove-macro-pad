@@ -20,5 +20,17 @@
                 &inc_dec_kp C_VOL_DN C_VOL_UP
             >;
         };
+
+        layer_1 {
+            status = "reserved";
+        };
+
+        layer_2 {
+            status = "reserved";
+        };
+
+        layer_3 {
+            status = "reserved";
+        };
     };
 };
