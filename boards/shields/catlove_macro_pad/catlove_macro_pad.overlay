@@ -37,11 +37,6 @@
             RC(2,0) RC(2,1) RC(2,2) RC(2,3)
         >;
     };
-
-    physical_layout0: physical_layout_0 {
-        compatible = "zmk,physical-layout";
-        display-name = "Default Layout";
-        kscan = <&kscan0>;
-        transform = <&default_transform>;
-    };
 };
+
+#include "catlove_macro_pad-layouts.dtsi"
