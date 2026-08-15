@@ -6,10 +6,18 @@
         compatible = "zmk,keymap";
 
         default_layer {
+            display-name = "Base";
+
             bindings = <
                 &kp N1  &kp N2  &kp N3  &kp N4
                 &kp Q   &kp W   &kp E   &kp R
                 &kp A   &kp S   &kp D   &kp F
+                &kp ENTER  &kp ESC
+            >;
+
+            sensor-bindings = <
+                &inc_dec_kp C_VOL_UP C_VOL_DN
+                &inc_dec_kp PG_UP PG_DN
             >;
         };
     };
