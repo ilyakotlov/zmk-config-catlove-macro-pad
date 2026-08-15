@@ -9,21 +9,24 @@
         kscan = <&kscan0>;
 
         keys =
+            /* ROW0: K1 K2 K3 K4 ENC1 */
             <&key_physical_attrs 100 100   0   0 0 0 0>,
             <&key_physical_attrs 100 100 100   0 0 0 0>,
             <&key_physical_attrs 100 100 200   0 0 0 0>,
             <&key_physical_attrs 100 100 300   0 0 0 0>,
-            <&key_physical_attrs 100 100 400   0 0 0 0>,
+            <&key_physical_attrs 100 100 450   0 0 0 0>,
 
+            /* ROW1: K5 K6 K7 K8 */
             <&key_physical_attrs 100 100   0 100 0 0 0>,
             <&key_physical_attrs 100 100 100 100 0 0 0>,
             <&key_physical_attrs 100 100 200 100 0 0 0>,
             <&key_physical_attrs 100 100 300 100 0 0 0>,
 
+            /* ROW2: K9 K10 K11 K12 ENC2 */
             <&key_physical_attrs 100 100   0 200 0 0 0>,
             <&key_physical_attrs 100 100 100 200 0 0 0>,
             <&key_physical_attrs 100 100 200 200 0 0 0>,
             <&key_physical_attrs 100 100 300 200 0 0 0>,
-            <&key_physical_attrs 100 100 400 200 0 0 0>;
+            <&key_physical_attrs 100 100 450 200 0 0 0>;
     };
 };
