@@ -38,8 +38,10 @@
 
     encoder: encoder {
         compatible = "alps,ec11";
-        a-gpios = <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        // A/B swapped so that physical clockwise (right) = ZMK clockwise:
+        // right turn -> C_VOL_UP, left turn -> C_VOL_DN (see keymap).
+        a-gpios = <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         // Same 20-detent / 80-transition default as the original revision.
         steps = <80>;
         status = "okay";

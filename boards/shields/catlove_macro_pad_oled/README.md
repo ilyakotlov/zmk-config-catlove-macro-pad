@@ -16,8 +16,8 @@ comes from the existing project's build.yaml, not from identification of a new P
 | C1 | P0.22 | D4 |
 | C2 | P0.24 | D5 |
 | C3 | P0.11 | D7 |
-| EC11 A | P0.31 | A3 / D21 |
-| EC11 B | P0.29 | A2 / D20 |
+| EC11 A (firmware B) | P0.31 | A3 / D21 |
+| EC11 B (firmware A) | P0.29 | A2 / D20 |
 | EC11 C (rotation common) | GND | GND |
 | OLED SDA | P1.15 | A0 / D18 |
 | OLED SCL | P0.02 | A1 / D19 |
