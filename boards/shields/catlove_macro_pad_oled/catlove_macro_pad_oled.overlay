@@ -63,6 +63,10 @@
         group1 {
             psels = <NRF_PSEL(TWIM_SDA, 1, 15)>,
                     <NRF_PSEL(TWIM_SCL, 0, 2)>;
+            // The OLED module has no I2C pull-ups (idle SDA/SCL measured ~1 V),
+            // so use the nRF52840 internal ~13k pull-ups. External 4.7k to 3.3V
+            // is still recommended.
+            bias-pull-up;
         };
     };
     oled_i2c_sleep: oled_i2c_sleep {
