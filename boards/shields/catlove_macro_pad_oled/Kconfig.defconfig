@@ -1,7 +1,7 @@
 if SHIELD_CATLOVE_MACRO_PAD_OLED
 
 config ZMK_KEYBOARD_NAME
-    default "Catlove OLED"
+    default "Catlove OLED v3"
 
 if ZMK_DISPLAY
 
