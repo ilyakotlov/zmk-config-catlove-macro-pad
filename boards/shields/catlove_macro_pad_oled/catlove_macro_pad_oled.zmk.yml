@@ -1,0 +1,10 @@
+file_format: "1"
+id: catlove_macro_pad_oled
+name: Catlove Macro Pad OLED
+type: shield
+requires:
+  - pro_micro
+features:
+  - keys
+  - encoder
+  - display
