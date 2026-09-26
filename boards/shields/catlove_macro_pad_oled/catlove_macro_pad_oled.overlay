@@ -76,9 +76,6 @@
         group1 {
             psels = <NRF_PSEL(TWIM_SDA, 1, 15)>,
                     <NRF_PSEL(TWIM_SCL, 0, 2)>;
-            // Keep the lines pulled up while the bus is suspended too, otherwise
-            // they float (~1 V) and the panel can latch garbage / miss wake-up.
-            bias-pull-up;
             low-power-enable;
         };
     };
